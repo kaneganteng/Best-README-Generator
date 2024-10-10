@@ -1,6 +1,8 @@
 // TODO: Include packages needed for this application
 import fs from 'fs';
 import inquirer from 'inquirer';
+import path from 'path';
+import generateMarkdown from './utils/generateMarkdown.js';
 // TODO: Create an array of questions for user input
 const questions = [
     // format for the questions
@@ -33,11 +35,13 @@ const questions = [
         type: 'input',
         name: 'credits',
         message: 'list any collaborators if there is any with links to their github profile.',
+        default: '',
     },
     {
         type: 'checkbox',
         name: 'license',
         message: 'choose any licenses that may have been used for this project',
+        choices: ["MIT", "ISC", "IPL 1.0"],
     },
     {
         type: 'input',
@@ -63,14 +67,14 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(). fileName), data);
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((responses) => {
         console.log("Creating the Best README.md File for you ...");
-        writeToFile("generated.md", generatedMarkdown({...responses}));
+        writeToFile(`generated.md`, generateMarkdown({...responses}));
     })
 }
 
