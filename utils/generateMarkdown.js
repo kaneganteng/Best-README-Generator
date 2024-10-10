@@ -40,6 +40,7 @@ function generateMarkdown(data) {
   ${data.tests}
   ## Questions
   If you have any questions, do not hesitate to send an email
+  * Name: ${fullName}
   * Github: [${data.github}](${data.githublink})
   * Email: ${data.email}
 `;
