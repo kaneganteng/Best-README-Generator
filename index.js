@@ -6,11 +6,7 @@ import generateMarkdown from './utils/generateMarkdown.js';
 // TODO: Create an array of questions for user input
 const questions = [
     // format for the questions
-    // {
-    //     type: '',
-    //     name: '',
-    //     message: '',
-    // },
+
     {
         type: 'input',
         name: 'title',
@@ -74,7 +70,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((responses) => {
         console.log("Creating the Best README.md File for you ...");
-        writeToFile(`generated.md`, generateMarkdown({...responses}));
+        writeToFile(`generated.md`, generateMarkdown({ ...responses }));
     })
 }
 
