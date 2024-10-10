@@ -1,7 +1,7 @@
-# 1
-  [![Github license](https://img.shields.io/badge/License-MIT-blue.svg)]
+# sample README.md
+  ![Github license](https://img.shields.io/badge/License-MIT-blue.svg)
   ## Description
-  2
+  This is a sample
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
@@ -12,18 +12,23 @@
   * [How to Contribute](#howToContribute)
   * [Test](#test)
   ## Installation
-  3
+  sample
   ## Usage
-  4
+  sample how instructions
   ## Credits
-  5
+  N/A
   ## License
   MIT
   ## Badges
-  6
+  N/A
   ## Features
-  7
+  sample sample sample
   ## How to Contribute
-  8
+  sample sample
   ## Test
-  9
+  sample
+  ## Questions
+  If you have any questions, do not hesitate to send an email
+  * Name: 
+  * Github: [sample](sample)
+  * Email: sample@mail.com
