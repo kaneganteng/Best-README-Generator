@@ -38,6 +38,10 @@ function generateMarkdown(data) {
   ${data.howToContribute}
   ## Test
   ${data.tests}
+  ## Questions
+  If you have any questions, do not hesitate to send an email
+  * Github: [${data.github}](${data.githublink})
+  * Email: ${data.email}
 `;
 }
 

@@ -25,9 +25,11 @@
   * When you open the terminal and input "node index.js" you will be given multiple questions.
   * Once all the questions are answered, a generated.md will be created and will have all the responses provided on the questions.
   ## How to Contribute
+  
+  ## Test
+  9
+  ## Contact
   Contact:
   * Name: Kane Esasta
   * Email: kaneesasta@gmail.com
   * Github: [kaneganteng](https://github.com/kaneganteng)
-  ## Test
-  9
