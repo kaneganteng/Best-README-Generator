@@ -1,11 +1,11 @@
-// TODO: Include packages needed for this application
+// Packages for this application
 import fs from 'fs';
 import inquirer from 'inquirer';
 import path from 'path';
 import generateMarkdown from './utils/generateMarkdown.js';
-// TODO: Create an array of questions for user input
+
 const questions = [
-    // format for the questions
+    // array of questions for the user input
 
     {
         type: 'input',
@@ -81,12 +81,12 @@ const questions = [
     },
 ];
 
-// TODO: Create a function to write README file
+// Function to write a README file
 function writeToFile(fileName, data) {
     return fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
 
-// TODO: Create a function to initialize app
+// Function to initialize the app
 function init() {
     inquirer.prompt(questions).then((responses) => {
         console.log("Creating the Best README.md File for you ...");
